@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@deno/mod.js';
+import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@v0.1.0-deno/mod.js';
 ```
 
 #### removeLastCodePoint( str, n )
@@ -74,7 +74,7 @@ out = removeLastCodePoint( 'foo bar', 10 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@deno/mod.js';
+import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@v0.1.0-deno/mod.js';
 
 var str = removeLastCodePoint( 'presidential election', 1 );
 // returns 'presidential electio'
