@@ -21,88 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var removeLast = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof removeLast, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns an empty string if provided an empty string', function test( t ) {
-	t.strictEqual( removeLast( '', 1 ), '', 'returns expected value' );
-	t.strictEqual( removeLast( '', 2 ), '', 'returns expected value' );
-	t.strictEqual( removeLast( '', 3 ), '', 'returns expected value' );
-	t.end();
-});
-
-tape( 'the function returns the input string if provided zero as the second argument', function test( t ) {
-	t.strictEqual( removeLast( 'hello world', 0 ), 'hello world', 'returns expected value' );
-	t.end();
-});
-
-tape( 'the function removes the last Unicode code point of a provided string (ascii)', function test( t ) {
-	var out;
-
-	out = removeLast( 'hello world', 1 );
-	t.strictEqual( out, 'hello worl', 'returns expected value' );
-
-	out = removeLast( '!!!', 1 );
-	t.strictEqual( out, '!!', 'returns expected value' );
-
-	out = removeLast( 'Hello World', 1 );
-	t.strictEqual( out, 'Hello Worl', 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function removes the last Unicode code point of a provided string (Unicode)', function test( t ) {
-	var out;
-
-	out = removeLast( 'अनुच्छेद', 1 );
-	t.strictEqual( out, 'अनुच्छे', 'returns expected value' );
-
-	out = removeLast( '六书/六書', 1 );
-	t.strictEqual( out, '六书/六', 'returns expected value' );
-
-	out = removeLast( '𐒻𐓟', 1 );
-	t.strictEqual( out, '𐒻', 'returns expected value' );
-
-	out = removeLast( '𐒻𐓟', 1 );
-	t.strictEqual( out, '𐒻', 'returns expected value' );
-
-	out = removeLast( '\uDC00', 1 );
-	t.strictEqual( out, '', 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function supports removing the last `n` Unicode code points of a provided string', function test( t ) {
-	var out;
-
-	out = removeLast( 'hello world', 1 );
-	t.strictEqual( out, 'hello worl', 'returns expected value' );
-
-	out = removeLast( 'hello world', 7 );
-	t.strictEqual( out, 'hell', 'returns expected value' );
-
-	out = removeLast( '!!!', 1 );
-	t.strictEqual( out, '!!', 'returns expected value' );
-
-	out = removeLast( '!!!', 2 );
-	t.strictEqual( out, '!', 'returns expected value' );
-
-	out = removeLast( 'अनुच्छेद', 1 );
-	t.strictEqual( out, 'अनुच्छे', 'returns expected value' );
-
-	out = removeLast( '六书/六書', 3 );
-	t.strictEqual( out, '六书', 'returns expected value' );
-
-	out = removeLast( '𐒻𐓟𐓟', 2 );
-	t.strictEqual( out, '𐒻', 'returns expected value' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
