@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@esm/index.mjs';
+import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@v0.2.0-esm/index.mjs';
 ```
 
 #### removeLastCodePoint( str, n )
@@ -79,7 +79,7 @@ out = removeLastCodePoint( 'foo bar', 10 );
 <body>
 <script type="module">
 
-import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@esm/index.mjs';
+import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@v0.2.0-esm/index.mjs';
 
 var str = removeLastCodePoint( 'presidential election', 1 );
 // returns 'presidential electio'
