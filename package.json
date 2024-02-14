@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string-base-remove-last-code-point",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Remove the last Unicode code point of a string.",
   "license": "Apache-2.0",
   "author": {
