@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-base-remove-last-code-point/tags). For example,
+
+```javascript
 import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@v0.2.1-esm/index.mjs';
 ```
 
@@ -79,7 +84,7 @@ out = removeLastCodePoint( 'foo bar', 10 );
 <body>
 <script type="module">
 
-import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@v0.2.1-esm/index.mjs';
+import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@esm/index.mjs';
 
 var str = removeLastCodePoint( 'presidential election', 1 );
 // returns 'presidential electio'
