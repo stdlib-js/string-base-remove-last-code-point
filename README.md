@@ -35,32 +35,14 @@ limitations under the License.
 
 > Remove the last `n` Unicode code points of a string.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/string-base-remove-last-code-point
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var removeLastCodePoint = require( '@stdlib/string-base-remove-last-code-point' );
+import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@esm/index.mjs';
 ```
 
 #### removeLastCodePoint( str, n )
@@ -91,8 +73,13 @@ out = removeLastCodePoint( 'foo bar', 10 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var removeLastCodePoint = require( '@stdlib/string-base-remove-last-code-point' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import removeLastCodePoint from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-remove-last-code-point@esm/index.mjs';
 
 var str = removeLastCodePoint( 'presidential election', 1 );
 // returns 'presidential electio'
@@ -105,6 +92,10 @@ str = removeLastCodePoint( 'The Last of the Mohicans', 5 );
 
 str = removeLastCodePoint( 'अनुच्छेद', 1 );
 // returns 'अनुच्छे'
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -136,7 +127,7 @@ str = removeLastCodePoint( 'अनुच्छेद', 1 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -201,11 +192,11 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/string/base/remove-first-code-point]: https://github.com/stdlib-js/string-base-remove-first-code-point
+[@stdlib/string/base/remove-first-code-point]: https://github.com/stdlib-js/string-base-remove-first-code-point/tree/esm
 
-[@stdlib/string/base/remove-last-grapheme-cluster]: https://github.com/stdlib-js/string-base-remove-last-grapheme-cluster
+[@stdlib/string/base/remove-last-grapheme-cluster]: https://github.com/stdlib-js/string-base-remove-last-grapheme-cluster/tree/esm
 
-[@stdlib/string/base/remove-last]: https://github.com/stdlib-js/string-base-remove-last
+[@stdlib/string/base/remove-last]: https://github.com/stdlib-js/string-base-remove-last/tree/esm
 
 <!-- </related-links> -->
 
